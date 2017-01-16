@@ -11,7 +11,10 @@
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>Category:</strong> <% @product.categories.each do |category|%>
+                  <%= category.name %>
+                  	<%end%>
+                  
  
 </p>
 
